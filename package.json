@@ -1,0 +1,26 @@
+{
+    "scripts": {
+        "test": "node scripts/test.js",
+        "build": "cross-env NODE_ENV=production babel js -d dist --ignore 'src/**/*.test.js' --copy-files",
+        "start": "node scripts/start.js"
+    },
+    "license": "GPL-3.0-or-later",
+    "files": [
+        "js"
+    ],
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "@babel/plugin-proposal-class-properties": "^7.3.3",
+        "@babel/core": "^7.3.3",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/cli": "^7.2.3"
+    },
+    "dependencies": {
+        "truncate-utf8-bytes": "^1.0.2"
+    },
+    "name": "@pluggable/app",
+    "version": "0.0.31",
+    "description": "Pluggable app",
+    "main": "js/index.js",
+    "author": "phlax"
+}
